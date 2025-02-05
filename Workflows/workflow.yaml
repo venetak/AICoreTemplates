@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
-  name: code-pipeline-55 # executable id, must be unique across all your workflows (YAML files), please modify this to any value (e.g. code-pipeline-12345) if you are not the only user of your SAP AI Core instance.
+  name: code-pipeline-68 # executable id, must be unique across all your workflows (YAML files), please modify this to any value (e.g. code-pipeline-12345) if you are not the only user of your SAP AI Core instance.
   annotations:
     scenarios.ai.sap.com/description: "Tutorial to add custom code to SAP AI Core 55"
     scenarios.ai.sap.com/name: "Code (Tutorial)"
@@ -9,7 +9,7 @@ metadata:
     executables.ai.sap.com/name: "House Price (Sklearn Example) 55"
   labels:
     scenarios.ai.sap.com/id: "learning-code"
-    ai.sap.com/version: "8.0"
+    ai.sap.com/version: "6.8.0"
 spec:
   imagePullSecrets:
     - name: dockersicket # your docker registry secret
